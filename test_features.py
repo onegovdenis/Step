@@ -11,4 +11,8 @@ class TestPin(unittest.TestCase):
         self.assertTrue(self.my_atm.rise_money(1000))
 
 
+    def test_pin(self):
+        pin = my_atm.enter_pin(777)
+        self.assertTrue(pin)
+
 
